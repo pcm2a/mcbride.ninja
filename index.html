@@ -1,1 +1,17 @@
-mcbride.ninja
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>mcbride.ninja</title></head>
+<body>
+  <h1>Site 1 (cookie was injected by Android)</h1>
+  <p><strong>Current cookies:</strong> <span id="cookies1"></span></p>
+  <button onclick="goToSite2()">Launch Site 2 in same WebView</button>
+
+  <script>
+    document.getElementById('cookies1').textContent = document.cookie || 'none';
+
+    function goToSite2() {
+      window.location.href = 'https://gamesignup.net';
+    }
+  </script>
+</body>
+</html>
